@@ -7,8 +7,9 @@ function change_animal(animal) {
   photo.src = "../images/" + animal + ".jpg"
 }
 
-animal_buttons.forEach(button => {
+for (const button of animal_buttons) {
+  console.log(button)
   button.addEventListener("change", event => {
     change_animal(button.value)
   })
-})
+}
