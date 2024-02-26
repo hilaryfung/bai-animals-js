@@ -8,7 +8,6 @@ function change_animal(animal) {
 }
 
 for (const button of animal_buttons) {
-  console.log(button)
   button.addEventListener("change", event => {
     change_animal(button.value)
   })
